@@ -4,7 +4,7 @@ let ajaxTimer=0;
 export function request(config) {
     $store.commit('showLoading');
     const install = axios.create({
-        baseURL: 'http://localhost:3000',
+        baseURL: 'http://music.wanggege.cn/',
         timeOut: 5000
     });
     install.interceptors.request.use(data => {
